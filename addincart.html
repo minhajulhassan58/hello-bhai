@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>ADD TO CART</h2>
+    <div id="userdetails">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td id=" a">Mark</td>
+                <td id="b">Otto</td>
+                <td id>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+     <script>
+        var name = localStorage.getItem("username");
+        var pname = localStorage.getItem("userpname");
+        var email = localStorage.getItem("useremail");
+    </script> 
+   <!-- <script>
+        var name = localStorage.getItem("username");
+        var email = localStorage.getItem("useremail");
+
+        if (name && email) {
+            document.getElementById('userdetails').innerHTML = `
+            <p>EMAIl:${email}</p>
+            <p>PASSWORD:${name}</p>
+                `;
+        }
+        else{
+            document.getElementById("userdetails").innerHTML ="<p>NO USER DETAILS FOUND.PLEASE SIGN UP FIRST</p>"
+        }
+    </script> -->
+</body>
+</html>
